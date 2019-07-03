@@ -6,7 +6,10 @@ $(window).on('load', function(){
 });
 
 $(function(){
-
+	/* Lazy Load -------------- */
+	if($('.lazy').length){
+		$('.lazy').Lazy();
+	}
 	/* Styler -------------- */
 	
     if($('.styler').length){
