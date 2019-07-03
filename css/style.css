@@ -838,6 +838,8 @@ label {
   position: relative;
   cursor: pointer;
   font-weight: 500; }
+  .radio-button:last-child {
+    margin-right: 0; }
   .radio-button--block {
     display: block;
     margin: 0 0 2rem; }
@@ -990,7 +992,6 @@ label {
     -ms-flex: none;
     flex: none;
     padding: 0;
-    line-height: 4rem;
     width: 4.4rem;
     border: 0.1rem solid #eeeeee;
     background-color: #ffffff; }
@@ -1004,6 +1005,7 @@ label {
     border-right: none; }
   .group-number__input {
     width: 7rem;
+    height: 4rem;
     border: 0.1rem solid #eeeeee;
     text-align: center;
     padding: 0 1rem;
@@ -1793,6 +1795,7 @@ label {
   .card-slider .slick-list {
     height: 100% !important; }
   .card-slider .slick-slide {
+    padding: 3rem;
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -1847,8 +1850,11 @@ label {
   color: #b7b7b7;
   margin-bottom: 1rem; }
 
-.button .btn + .btn {
-  margin-left: 2rem; }
+.button .btn {
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
+  .button .btn:last-child {
+    margin-right: 0; }
 
 .button-more {
   text-align: center;
@@ -2266,9 +2272,7 @@ label {
       transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
-      transform: scale(1.1);
-      min-height: 100%;
-      max-width: 100%; }
+      transform: scale(1.1); }
   .stuffing-block__caption {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -2478,7 +2482,9 @@ label {
 .cake-simple__title {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #525252; }
+  line-height: 1.3;
+  color: #525252;
+  margin-bottom: 1.5rem; }
 
 .cake-simple__description {
   margin-bottom: 4rem; }
@@ -3371,7 +3377,9 @@ p > .social__link {
   .cake-simple__img {
     height: 50rem; }
   .candle-numbers.column-5 > .item {
-    width: 25%; } }
+    width: 25%; }
+  .text-lg-left {
+    text-align: left !important; } }
 
 @media screen and (max-width: 991px) {
   .header__bottom {
@@ -3719,6 +3727,9 @@ p > .social__link {
     margin-bottom: 2.5rem; }
   .card-list-slider .slick-arrow {
     top: 10.5rem; }
+  .configuration-slider {
+    margin-left: -2rem;
+    margin-right: -2rem; }
   .more {
     height: 4.4rem;
     padding: 0 4rem; }
@@ -3938,6 +3949,7 @@ p > .social__link {
     padding-right: 0; }
     .section__head.grid .section__icon {
       left: 0;
+      top: .2rem;
       right: auto; }
       .section__head.grid .section__icon .icon {
         font-size: 2rem; }
@@ -3987,6 +3999,13 @@ p > .social__link {
     display: none; }
   .card-list-slider .slick-arrow {
     top: 6.5rem; }
+  .card-slider .slick-slide {
+    padding: 2rem; }
+  .card-slider-nav {
+    margin-bottom: 4rem; }
+    .card-slider-nav .slick-slide {
+      height: 6rem;
+      line-height: 6rem; }
   .sticker {
     height: 1.8rem;
     font-size: .9rem;
