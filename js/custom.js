@@ -73,6 +73,16 @@ $(function(){
 			centerPadding: '0',
 			asNavFor: '.card-slider',
 			focusOnSelect: true,
+			responsive: [
+				
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 3,
+
+					}
+				},
+			]
 		});
 	}
 
@@ -84,7 +94,16 @@ $(function(){
 		  focusOnSelect: true,
 		  dots: true,
 		  variableWidth: true,
-		  
+		  responsive: [
+				
+				{
+					breakpoint: 650,
+					settings: {
+						arrows: false,
+
+					}
+				},
+			]
 		});
 	}
 
