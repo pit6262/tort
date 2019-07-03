@@ -3985,7 +3985,7 @@ p > .social__link {
     height: 90%;
     width: auto;
     max-width: none;
-    max-height: 90%; }
+    max-height: none; }
   .card {
     padding-top: 4rem; }
   .card__img {
