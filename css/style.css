@@ -2024,8 +2024,9 @@ label {
     margin-bottom: 5rem; }
 
 .ingredients-img {
-  background: url("../img/ingredients-img.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .ingredients-list {
   display: -webkit-box;
@@ -2140,6 +2141,11 @@ label {
     margin-bottom: 1.4rem; }
   .contacts-block .social {
     margin-top: 1.6rem; }
+    .contacts-block .social .icon-instagram {
+      fill: url(#my-cool-gradient); }
+    .contacts-block .social .icon-vk {
+      color: #436eab;
+      font-size: 2.4rem; }
 
 #map {
   height: 44.7rem;
@@ -3000,8 +3006,9 @@ label {
 
 p > .social__link {
   margin-left: 1rem; }
-  p > .social__link .icon {
-    font-size: 3rem; }
+  p > .social__link .icon-vk {
+    color: #436eab;
+    font-size: 2.8rem; }
 
 /* 7. BASE STYLES */
 /* ================================================ */
