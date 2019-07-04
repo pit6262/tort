@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
 	<link rel="stylesheet" type="text/css" href="css/menu.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css" />
-	<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
 </head>
 <body class="loaded ">
 
@@ -500,7 +500,7 @@
 			<form action="#">
 				<div class="form-field">
 					<div class="form-field-icon">
-						<input type="text" class="datepicker-here form-input" placeholder="Дата">
+						<input type="text" class="form-input" id="datetimepicker1" placeholder="Дата">
 						<span class="form-icon"><span class="arrow"></span></span>
 					</div>
 				</div>
@@ -775,7 +775,7 @@
 			<form action="#">
 				<div class="form-field">
 					<div class="form-field-icon">
-						<input type="text" class="datepicker-here form-input" placeholder="Дата">
+						<input type="text" class="form-input" id="datetimepicker" placeholder="Дата">
 						<span class="form-icon"><span class="arrow"></span></span>
 					</div>
 				</div>
@@ -1288,11 +1288,14 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script> 
-<script src="js/datepicker.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/jquery.lazy.min.js"></script>
 
 <script defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;apikey=dfeede90-0c41-4832-a234-cf7898175c75&amp;lang=ru_RU" type="text/javascript"></script>
+
+
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/custom.js"></script>
 
 </body>

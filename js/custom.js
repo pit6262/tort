@@ -21,6 +21,25 @@ $(function(){
 	    $(".tel-mask").mask("+7 (999) 999-99-99");
 	}
 
+	/* datetimepicker -------------- */
+	if($('#datetimepicker2').length){
+		$('#datetimepicker2').datetimepicker({
+			locale: 'ru',          
+		});
+	}
+	if($('#datetimepicker').length){
+		$('#datetimepicker').datetimepicker({
+			locale: 'ru',  
+			format: 'L'        
+		});
+	}
+	if($('#datetimepicker1').length){
+		$('#datetimepicker1').datetimepicker({
+			locale: 'ru', 
+			format: 'L'         
+		});
+	}
+
 	/* Fancybox -------------- */
     if($('[data-fancybox]').length){
         $("[data-fancybox]").fancybox({
