@@ -71,135 +71,137 @@
 			<div class="container">
 				<div class="cart-simple">
 					<form action="#">
-						<div class="row gutter50">
-							<div class="col-lg-8 order-lg-1">
-								<h3 class="h3 mb25">Ваш заказ</h3>
-								<table class="cart-table">
-									<thead>
-										<tr>
-											<th style="width:120px;"></th>
-											<th class="text-left">наименование</th>
-											<th style="width:180px;">вес</th>
-											<th style="width:105px;">цена</th>
-											<th style="width:55px;"></th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti.png" alt=""></a>
-											</td>
-											<td>
-												<div class="card-entry">
-													<div class="articul">Арт. 1478</div>
-													<div class="card-entry__title"><a href="#">Торт “Лунтик”</a></div>
-													<p class="card-entry__description">Мусс малина-маракуя</p>
-												</div>
-											</td>
-											<td data-title="вес">
-												<div class="group-number group-number--weight">
-													<button type="button" class="group-number__minus js-minus">&minus;</button>
-													<input type="text" class="group-number__input" value="3 кг" readonly="">
-													<button type="button" class="group-number__plus js-plus">&plus;</button>
-												</div>
-											</td>
-											<td data-title="цена"><span class="nowrap">5 100 руб</span></td>
-											<td>
-												<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti4.png" alt=""></a>
-											</td>
-											<td>
-												<div class="card-entry">
-													<div class="articul">Арт. 1444</div>
-													<div class="card-entry__title"><a href="#">Торт “Разводы с короной и макаронами”</a></div>
-													<p class="card-entry__description">Чизкейк малиновый</p>
-												</div>
-											</td>
-											<td data-title="вес">
-												<div class="group-number group-number--weight">
-													<button type="button" class="group-number__minus js-minus">&minus;</button>
-													<input type="text" class="group-number__input" value="3 кг" readonly="">
-													<button type="button" class="group-number__plus js-plus">&plus;</button>
-												</div>
-											</td>
-											<td data-title="цена"><span class="nowrap">6 600 руб</span></td>
-											<td>
-												<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti3.png" alt=""></a>
-											</td>
-											<td>
-												<div class="card-entry">
-													<div class="articul">Арт. 533</div>
-													<div class="card-entry__title"><a href="#">Свеча цифра “5” </a></div>
-													<p class="card-entry__description">голубая</p>
-												</div>
-											</td>
-											<td data-title="вес">
-												<div class="group-number group-number--count">
-													<button type="button" class="group-number__minus js-minus">&minus;</button>
-													<input type="text" class="group-number__input" value="3 шт" readonly="">
-													<button type="button" class="group-number__plus js-plus">&plus;</button>
-												</div>
-											</td>
-											<td data-title="цена"><span class="nowrap">600 руб</span></td>
-											<td>
-												<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti2.png" alt=""></a>
-											</td>
-											<td>
-												<div class="card-entry">
-													<div class="articul">Арт. 1533</div>
-													<div class="card-entry__title"><a href="#">Набор посуды</a></div>
-												</div>
-											</td>
-											<td data-title="вес">
-												<div class="group-number group-number--count">
-													<button type="button" class="group-number__minus js-minus">&minus;</button>
-													<input type="text" class="group-number__input" value="1 шт" readonly="">
-													<button type="button" class="group-number__plus js-plus">&plus;</button>
-												</div>
-											</td>
-											<td data-title="цена"><span class="nowrap">300 руб</span></td>
-											<td>
-												<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<div class="cart-table-reload">
-									<a href="#" class="btn btn--dark">Обновить корзину</a>
-								</div>
-
-								<h3 class="h3 mb25">Промокод на скидку</h3>
-								<div class="row align-items-center">
-									<div class="col-lg-7">
-										<div class="form-field form-single">
-											<input type="text" class="form-input form-single__input" placeholder="Введите промокод"/>
-											<button type="button" class="btn btn--warning btn--lg form-single__button">
-												<span class="d-sm-none d-block"><svg class="icon icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></span><span class="d-none d-sm-block">Применить</span>
-											</button>
-										</div>
+						<div class="row gutter50 align-items-start" >
+							<div class="col-lg-8 order-lg-1" >
+								<div id="mg-sidebar">
+									<h3 class="h3 mb25">Ваш заказ</h3>
+									<table class="cart-table">
+										<thead>
+											<tr>
+												<th style="width:120px;"></th>
+												<th class="text-left">наименование</th>
+												<th style="width:180px;">вес</th>
+												<th style="width:105px;">цена</th>
+												<th style="width:55px;"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti.png" alt=""></a>
+												</td>
+												<td>
+													<div class="card-entry">
+														<div class="articul">Арт. 1478</div>
+														<div class="card-entry__title"><a href="#">Торт “Лунтик”</a></div>
+														<p class="card-entry__description">Мусс малина-маракуя</p>
+													</div>
+												</td>
+												<td data-title="вес">
+													<div class="group-number group-number--weight">
+														<button type="button" class="group-number__minus js-minus">&minus;</button>
+														<input type="text" class="group-number__input" value="3 кг" readonly="">
+														<button type="button" class="group-number__plus js-plus">&plus;</button>
+													</div>
+												</td>
+												<td data-title="цена"><span class="nowrap">5 100 руб</span></td>
+												<td>
+													<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti4.png" alt=""></a>
+												</td>
+												<td>
+													<div class="card-entry">
+														<div class="articul">Арт. 1444</div>
+														<div class="card-entry__title"><a href="#">Торт “Разводы с короной и макаронами”</a></div>
+														<p class="card-entry__description">Чизкейк малиновый</p>
+													</div>
+												</td>
+												<td data-title="вес">
+													<div class="group-number group-number--weight">
+														<button type="button" class="group-number__minus js-minus">&minus;</button>
+														<input type="text" class="group-number__input" value="3 кг" readonly="">
+														<button type="button" class="group-number__plus js-plus">&plus;</button>
+													</div>
+												</td>
+												<td data-title="цена"><span class="nowrap">6 600 руб</span></td>
+												<td>
+													<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti3.png" alt=""></a>
+												</td>
+												<td>
+													<div class="card-entry">
+														<div class="articul">Арт. 533</div>
+														<div class="card-entry__title"><a href="#">Свеча цифра “5” </a></div>
+														<p class="card-entry__description">голубая</p>
+													</div>
+												</td>
+												<td data-title="вес">
+													<div class="group-number group-number--count">
+														<button type="button" class="group-number__minus js-minus">&minus;</button>
+														<input type="text" class="group-number__input" value="3 шт" readonly="">
+														<button type="button" class="group-number__plus js-plus">&plus;</button>
+													</div>
+												</td>
+												<td data-title="цена"><span class="nowrap">600 руб</span></td>
+												<td>
+													<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a href="#" class="cart-table__img"><img class="lazy" data-src="img/cti2.png" alt=""></a>
+												</td>
+												<td>
+													<div class="card-entry">
+														<div class="articul">Арт. 1533</div>
+														<div class="card-entry__title"><a href="#">Набор посуды</a></div>
+													</div>
+												</td>
+												<td data-title="вес">
+													<div class="group-number group-number--count">
+														<button type="button" class="group-number__minus js-minus">&minus;</button>
+														<input type="text" class="group-number__input" value="1 шт" readonly="">
+														<button type="button" class="group-number__plus js-plus">&plus;</button>
+													</div>
+												</td>
+												<td data-title="цена"><span class="nowrap">300 руб</span></td>
+												<td>
+													<span class="cart-table__remove-item js-remove"><svg class="icon icon-close-button"><use xlink:href="#icon-close-button"></use></svg></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="cart-table-reload">
+										<a href="#" class="btn btn--dark">Обновить корзину</a>
 									</div>
-									<div class="col-lg-5">
-										<div class="cart-total mb20">
-											Итого: <strong>12 600 руб</strong>
+
+									<h3 class="h3 mb25">Промокод на скидку</h3>
+									<div class="row align-items-center">
+										<div class="col-lg-7">
+											<div class="form-field form-single">
+												<input type="text" class="form-input form-single__input" placeholder="Введите промокод"/>
+												<button type="button" class="btn btn--warning btn--lg form-single__button">
+													<span class="d-sm-none d-block"><svg class="icon icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></span><span class="d-none d-sm-block">Применить</span>
+												</button>
+											</div>
+										</div>
+										<div class="col-lg-5">
+											<div class="cart-total mb20">
+												Итого: <strong>12 600 руб</strong>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4">
+							<div class="col-lg-4" id="mg-main">
 								<div class="cart-simple__item">
 									<h3 class="h3 mb25">Контактные данные</h3>
 									<div class="form-field">
@@ -295,8 +297,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 		<div class="cd-overlay"></div>
 	</main>
 	<!-- CONTENT EOF   -->
@@ -1329,9 +1329,48 @@
 <script src="js/menu.js"></script>
 <script src="js/jquery.lazy.min.js"></script>
 
-<script defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;apikey=dfeede90-0c41-4832-a234-cf7898175c75&amp;lang=ru_RU" type="text/javascript">
-  </script>
+<script defer src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;apikey=dfeede90-0c41-4832-a234-cf7898175c75&amp;lang=ru_RU" type="text/javascript"></script>
 <script src="js/custom.js"></script>
+<script>
+(function(){
+	var a = document.querySelector('#mg-sidebar'), b = null, P = 40;
+	window.addEventListener('scroll', Ascroll, false);
+	document.body.addEventListener('scroll', Ascroll, false);
+	function Ascroll() {
+	  if (b == null) {
+	    var Sa = getComputedStyle(a, ''), s = '';
+	    
+	    b = document.createElement('div');
+	    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+	    a.insertBefore(b, a.firstChild);
+	    var l = a.childNodes.length;
+	    for (var i = 1; i < l; i++) {
+	      b.appendChild(a.childNodes[1]);
+	    }
+	    a.style.height = b.getBoundingClientRect().height + 'px';
+	    a.style.padding = '0';
+	    a.style.border = '0';
+	  }
+	  var Ra = a.getBoundingClientRect(),
+	      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('#mg-main').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+	  if ((Ra.top - P) <= 0) {
+	    if ((Ra.top - P) <= R) {
+	      b.className = 'stop';
+	      b.style.top = - R +'px';
+	    } else {
+	      b.className = 'sticky';
+	      b.style.top = P + 'px';
+	    }
+	  } else {
+	    b.className = '';
+	    b.style.top = '';
+	  }
+	  window.addEventListener('resize', function() {
+	    a.children[0].style.width = getComputedStyle(a, '').width
+	  }, false);
+	}
+})()
+</script>
 
 </body>
 </html>

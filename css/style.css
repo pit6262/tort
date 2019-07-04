@@ -977,6 +977,17 @@ label {
   .tab-cont.hide {
     opacity: 0; }
 
+@media screen and (min-height: 650px) and (min-width: 992px) {
+  .sticky {
+    position: fixed;
+    z-index: 8; }
+  .stop {
+    position: relative;
+    z-index: 8; } }
+
+.mg-fixed {
+  min-width: 1px; }
+
 .group-number {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3391,6 +3402,11 @@ p > .social__link {
     text-align: left !important; } }
 
 @media screen and (max-width: 991px) {
+  #mg-sidebar {
+    height: auto !important; }
+    #mg-sidebar .sticky, #mg-sidebar .stop, #mg-sidebar > div {
+      width: auto !important;
+      top: auto !important; }
   .header__bottom {
     padding: 2rem 0; }
   .cd-nav-item-button {
