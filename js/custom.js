@@ -38,6 +38,7 @@ $(function(){
 			locale: 'ru',        
 		});
 	}
+	$('input').on('click', function() { $(this).removeAttr('readonly'); $(this).trigger('click'); })
 
 	/* Fancybox -------------- */
     if($('[data-fancybox]').length){
