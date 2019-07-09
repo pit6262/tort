@@ -1821,7 +1821,7 @@ label {
   .card-slider .slick-list {
     height: 100% !important; }
   .card-slider .slick-slide {
-    padding: 3rem;
+    height: auto !important;
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -1833,7 +1833,10 @@ label {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat; }
     .card-slider .slick-slide img {
       -webkit-box-flex: 0;
       -webkit-flex: none;
@@ -2514,6 +2517,9 @@ label {
 
 .cake-simple__description {
   margin-bottom: 4rem; }
+
+.card-simple .cake-simple__img {
+  background-color: transparent; }
 
 .upload-img {
   position: relative;
@@ -3583,6 +3589,8 @@ p > .social__link {
     padding-top: 6rem; }
   .card-list-slider .slick-arrow {
     top: 12.5rem; }
+  .card-slider {
+    height: 40.2rem; }
   .button-more {
     margin-top: 4rem; }
   .price-block {
@@ -3813,6 +3821,8 @@ p > .social__link {
     margin-right: -2rem; }
   .cake-simple__img {
     max-height: 35rem; }
+  .card-slider {
+    height: 30rem; }
   .img-wrap {
     height: 35rem;
     line-height: 35rem; }
