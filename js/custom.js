@@ -24,21 +24,24 @@ $(function(){
 	/* datetimepicker -------------- */
 	if($('#datetimepicker2').length){
 		$('#datetimepicker2').datetimepicker({
-			locale: 'ru',          
+			locale: 'ru', 
+			ignoreReadonly: true,         
 		});
 	}
 	if($('#datetimepicker').length){
 		$('#datetimepicker').datetimepicker({
-			locale: 'ru',  
+			locale: 'ru', 
+			ignoreReadonly: true, 
 			format: 'L'        
 		});
 	}
 	if($('#datetimepicker1').length){
 		$('#datetimepicker1').datetimepicker({
-			locale: 'ru',        
+			locale: 'ru', 
+			ignoreReadonly: true,       
 		});
 	}
-	$('input').on('click', function() { $(this).removeAttr('readonly'); $(this).trigger('click'); })
+
 
 	/* Fancybox -------------- */
     if($('[data-fancybox]').length){
