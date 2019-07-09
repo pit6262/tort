@@ -127,7 +127,10 @@
 				<div class="menu-grid">
 					<div class="menu-grid__item">
 						<a href="#" class="menu-grid-block menu-grid-block--style1 menu-grid-block--lg">
-							<div class="menu-grid-block__img"><img class="lazy" data-src="img/menu-grid-img1.png" alt=""></div>
+							<div class="menu-grid-block__img">
+								<img class="lazy d-none d-sm-block" data-src="img/menu-grid-img1.png" alt="">
+								<img class="lazy d-sm-none" data-src="img/menu-grid-img1_inverted.png" alt="">
+							</div>
 							<div class="menu-grid-block__title">Корпоративные</div>
 							<div class="view-all">Смотреть всe <span class="arrow"></span></div>
 						</a>
@@ -853,7 +856,7 @@
 												<div class="contacts-block__title">Адрес</div>
 												<div class="contacts-block__descr">Балашиха, <br>Советская, д. 1/7</div>
 												<div class="contacts-block__text">
-													<a href="#" class="link">Построить маршрут</a>
+													<a href="https://yandex.ru/maps/-/CCg1nH4C" class="navigator d-md-none"><img src="img/knopka_navigator.png" alt="" width="200"></a>
 												</div>
 											</div>
 										</div>
@@ -876,7 +879,7 @@
 							<div class="row">
 								<div class="col-xl-8 col-lg-10 offset-xl-2 offset-lg-1">
 									<div class="row">
-										<div class="col-md-6 col-lg-5 offset-lg-1 ">
+										<div class="col-sm-6 col-lg-5 offset-lg-1 ">
 											<div class="delivery-block">
 												<div class="delivery-block__head">
 													<svg class="icon icon-food-and-restaurant-1"><use xlink:href="#icon-food-and-restaurant-1"></use></svg>
@@ -889,7 +892,7 @@
 												При онлайн оплате заказа стоимость доставки включается в общую сумму.</p>
 											</div>
 										</div>
-										<div class="col-md-6 col-lg-5 offset-lg-1">
+										<div class="col-sm-6 col-lg-5 offset-lg-1">
 											<div class="delivery-block">
 												<div class="delivery-block__head">
 													<svg class="icon icon-box"><use xlink:href="#icon-box"></use></svg>
@@ -908,31 +911,35 @@
 							<p class="font-bold text-center mb40">Уважаемые покупатели! <br>
 							Мы начинаем выполнение вашего заказа только после 50% предоплаты</p>
 							<div class="row">
-								<div class="col-md-4  ">
-									<div class="delivery-block">
-										<div class="delivery-block__head">
-											<svg class="icon icon-credit-card-2"><use xlink:href="#icon-credit-card-2"></use></svg>
-											<div class="delivery-block__title">Онлайн оплата <br>на сайте</div>
+								<div class="col-xl-10 offset-xl-1">
+									<div class="row">
+										<div class="col-md-4  col-sm-6">
+											<div class="delivery-block">
+												<div class="delivery-block__head">
+													<svg class="icon icon-credit-card-2"><use xlink:href="#icon-credit-card-2"></use></svg>
+													<div class="delivery-block__title">Онлайн оплата <br>на сайте</div>
+												</div>
+												<p>- Заказ от 5 кг по Москве  - бесплатно;</p>
+											</div>
 										</div>
-										<p>- Заказ от 5 кг по Москве  - бесплатно;</p>
-									</div>
-								</div>
-								<div class="col-md-4 ">
-									<div class="delivery-block">
-										<div class="delivery-block__head">
-											<svg class="icon icon-wallet"><use xlink:href="#icon-wallet"></use></svg>
-											<div class="delivery-block__title">Наличными  или картой  в кондитерской</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="delivery-block">
+												<div class="delivery-block__head">
+													<svg class="icon icon-wallet"><use xlink:href="#icon-wallet"></use></svg>
+													<div class="delivery-block__title">Наличными  или картой  в кондитерской</div>
+												</div>
+												<p>Балашиха, ул. Советская, д. 1/7</p>
+											</div>
 										</div>
-										<p>Балашиха, ул. Советская, д. 1/7</p>
-									</div>
-								</div>
-								<div class="col-md-4 ">
-									<div class="delivery-block">
-										<div class="delivery-block__head">
-											<svg class="icon icon-credit-card-1"><use xlink:href="#icon-credit-card-1"></use></svg>
-											<div class="delivery-block__title">Перевод на карту Сбербанка</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="delivery-block">
+												<div class="delivery-block__head">
+													<svg class="icon icon-credit-card-1"><use xlink:href="#icon-credit-card-1"></use></svg>
+													<div class="delivery-block__title">Перевод на карту Сбербанка</div>
+												</div>
+												<p>Ежедневно без перерыва</p>
+											</div>
 										</div>
-										<p>Ежедневно без перерыва</p>
 									</div>
 								</div>
 							</div>
@@ -1179,10 +1186,10 @@
 		</div>
 		<div class="col-md-6 mb30">
 			<p class="size-lm text-center mt10">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
-			<form action="#" class="mt60">
+			<form action="#" class="mt60 mt-sm-20">
 				<div class="form-field">
 					<div class="form-field-icon">
-						<input type="text" class="form-input" id="datetimepicker1" placeholder="Дата и время">
+						<input type="date" class="form-input" id="datetimepicker1" placeholder="Дата и время">
 						<span class="form-icon"><span class="arrow"></span></span>
 					</div>
 				</div>
@@ -1195,7 +1202,7 @@
 				<div class="form-field">
 					<input type="email" class="form-input " placeholder="Email">
 				</div>
-				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg mt30">
+				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg mt35">
 				<p class="mt10 size-xs text-center color-default mb0">
 					Нажимая кнопку, вы соглашаетесь <br>с <a data-fancybox data-src="#popup-conditions"  href="javascript:;" onclick="javascript:parent.jQuery.fancybox.close();" class="link">условиями обработки данных</a>
 				</p>
@@ -1449,12 +1456,12 @@
 					<li>- После дегустации вы делаете заказ торта весом от 3 кг с понравившейся начинкой </li>
 				</ul>
 			</div>
-			<p class="size-sm color-default">* Стоимость доставки рассчитывается как доставка торта <br>
+			<p class="size-sm color-default mt130 mt-md-150 mt-sm-20">* Стоимость доставки рассчитывается как доставка торта <br>
 			В случае заказа торта весом менее 3 кг или отказа от заказа оплачивается дегустационный набор</p>
 		</div>
 		<div class="col-md-6 mb30">
-			<p class="size-lm text-center">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
-			<form action="#">
+			<p class="size-lm text-center mt10">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
+			<form action="#" class="mt60 mt-sm-20 ">
 				<div class="form-field">
 					<div class="form-field-icon">
 						<input type="text" class="form-input" id="datetimepicker" placeholder="Дата">
@@ -1470,7 +1477,7 @@
 				<div class="form-field">
 					<input type="email" class="form-input" placeholder="Email">
 				</div>
-				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg">
+				<input type="submit" value="Оформить заказ" class="mt35 btn btn--block btn--warning btn--lg">
 				<p class="mt10 size-xs text-center color-default mb0">
 					Нажимая кнопку, вы соглашаетесь <br>с <a data-fancybox data-src="#popup-conditions"  href="javascript:;" onclick="javascript:parent.jQuery.fancybox.close();" class="link">условиями обработки данных</a>
 				</p>
@@ -1967,9 +1974,9 @@
 </svg>
 
 <div class="icon-load">
-	<div class="ball a"></div>
+<!-- 	<div class="ball a"></div>
 	<div class="ball b"></div>
-	<div class="ball c"></div>
+	<div class="ball c"></div> -->
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>

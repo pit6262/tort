@@ -104,6 +104,8 @@ body {
   display: flex;
   letter-spacing: 0.056rem;
   overflow-x: hidden; }
+  body.fancybox-active {
+    overflow: hidden; }
 
 @font-face {
   font-family: "PFBagueSansPro";
@@ -289,6 +291,12 @@ body {
 
 .mt50 {
   margin-top: 5rem !important; }
+
+.mt60 {
+  margin-top: 6rem !important; }
+
+.mt130 {
+  margin-top: 13rem !important; }
 
 .mb0 {
   margin-bottom: 0 !important; }
@@ -1083,6 +1091,8 @@ label {
     position: absolute;
     left: 0;
     top: -.2rem; }
+  .phone__link:hover {
+    color: #fcd14f; }
 
 .work-time {
   font-size: 1.2rem;
@@ -1520,6 +1530,8 @@ label {
     border-right: .1rem solid #eef3f7; }
     .adversting-block:last-child {
       border-right: none; }
+    .adversting-block:focus {
+      outline: none; }
     .adversting-block__title {
       font-size: 1.6rem;
       font-weight: 800;
@@ -1783,6 +1795,9 @@ label {
       padding-right: 3.2rem;
       position: relative;
       overflow: hidden; }
+
+.cd-gallery .card {
+  height: 100%; }
 
 .card-description {
   font-size: 1.3rem;
@@ -2164,22 +2179,17 @@ label {
 
 .delivery-block {
   margin-bottom: 5rem; }
-  .delivery-block__head {
-    text-align: center;
-    max-width: 18rem;
-    margin: 0 auto; }
-    .delivery-block__head .icon {
-      font-size: 3rem;
-      color: #525252;
-      margin-bottom: 1rem; }
+  .delivery-block__head .icon {
+    font-size: 3rem;
+    color: #fcd14f;
+    margin-bottom: 1rem; }
   .delivery-block__title {
     position: relative;
     font-size: 1.5rem;
     font-weight: 800;
     color: #525252;
     line-height: 1.2;
-    max-width: 18rem;
-    margin: 0 auto; }
+    max-width: 18rem; }
     .delivery-block__title:after {
       content: '';
       display: block;
@@ -2189,12 +2199,9 @@ label {
       border-radius: 0.2rem;
       background-color: #fcd14f;
       margin-bottom: 1.7rem;
-      margin-top: 1.7rem;
-      margin-left: auto;
-      margin-right: auto; }
+      margin-top: 1.7rem; }
   .delivery-block p {
-    max-width: 32rem;
-    margin: 0 auto; }
+    max-width: 32rem; }
 
 .social__link {
   display: inline-block;
@@ -2267,18 +2274,19 @@ label {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   padding-top: 1rem; }
-  .stuffing-block:hover .stuffing-block__img img {
+  .stuffing-block:not(.no-hover):hover .stuffing-block__img img {
     opacity: 0.5;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
-  .stuffing-block:hover .stuffing-block__caption:before,
-  .stuffing-block:hover .stuffing-block__info {
+  .stuffing-block:not(.no-hover):hover .stuffing-block__caption:before,
+  .stuffing-block:not(.no-hover):hover .stuffing-block__info {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
   .stuffing-block__img {
+    display: inline-block;
     position: relative;
     overflow: hidden;
     background-color: #3085a3; }
@@ -2536,7 +2544,7 @@ label {
       right: 2rem;
       font-size: 0; }
       .upload-img__preview .delete-link .icon {
-        font-size: 2rem;
+        font-size: 3rem;
         color: #fcd14f; }
   .upload-img__text {
     font-size: 1.3rem; }
@@ -2559,6 +2567,15 @@ label {
     font-weight: 800; }
   .upload-img .btn--warning {
     box-shadow: 0 0.1rem 0.7rem 0.1rem rgba(0, 0, 0, 0.1); }
+
+.img-wrap {
+  height: 55.5rem;
+  line-height: 55.5rem;
+  display: block; }
+  .img-wrap img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100%; }
 
 #addImages {
   opacity: 0;
@@ -2796,12 +2813,28 @@ label {
     cursor: pointer;
     overflow: hidden;
     vertical-align: middle;
-    display: inline-block; }
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: .5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .cart-table__remove-item:hover {
+      background: #f7f7f7; }
     .cart-table__remove-item .icon {
       font-size: 1.5rem;
       color: #fcd14f; }
-      .cart-table__remove-item .icon:hover {
-        color: #f1c84c; }
 
 .cart-table-reload {
   text-align: right;
@@ -2831,6 +2864,9 @@ label {
     font-weight: 800;
     color: #525252;
     font-size: 2.2rem; }
+
+#mg-sidebar > div {
+  padding-bottom: 5rem; }
 
 .cd-main-content {
   position: relative; }
@@ -2990,7 +3026,7 @@ label {
   .address-list.dark {
     color: #525252; }
     .address-list.dark .address-list__item a:hover {
-      color: #000; }
+      color: #fcd14f; }
   .address-list__item {
     position: relative;
     padding-left: 3rem;
@@ -3091,6 +3127,8 @@ p > .social__link {
     padding-right: 1.5rem;
     margin-left: -3.5rem;
     margin-right: -3.5rem; }
+  .popup .card__img {
+    margin-bottom: 2rem; }
 
 .hr {
   background: #eeeeee;
@@ -3396,12 +3434,23 @@ p > .social__link {
     bottom: 2rem; }
   .cake-simple__img {
     height: 50rem; }
+  .img-wrap {
+    height: 50rem;
+    line-height: 50rem; }
   .candle-numbers.column-5 > .item {
     width: 25%; }
   .text-lg-left {
     text-align: left !important; } }
 
 @media screen and (max-width: 991px) {
+  .mt-md-150 {
+    margin-top: 15rem !important; }
+  .gutter-md30 {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important; }
+    .gutter-md30 > [class^=col] {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
   #mg-sidebar {
     height: auto !important; }
     #mg-sidebar .sticky, #mg-sidebar .stop, #mg-sidebar > div {
@@ -3572,7 +3621,10 @@ p > .social__link {
     padding-right: 1rem !important; }
   .cake-simple__img {
     height: auto;
-    max-height: 60rem; }
+    max-height: 40.2rem; }
+  .img-wrap {
+    height: 40.2rem;
+    line-height: 40.2rem; }
   .configuration__item {
     margin-bottom: 3rem; }
   .upload-img__title {
@@ -3603,6 +3655,8 @@ p > .social__link {
     font-size: 1.1rem; } }
 
 @media screen and (max-width: 767px) {
+  .mt-sm-20 {
+    margin-top: 2rem !important; }
   .btn--lg, a.btn--lg {
     padding-left: 3.2rem;
     padding-right: 3.2rem; }
@@ -3690,12 +3744,15 @@ p > .social__link {
     margin-bottom: 4rem;
     padding-top: 0;
     padding-bottom: 0;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-left: -12rem;
+    margin-right: -12rem; }
   .adversting-block {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
     margin: 1rem 0;
+    width: 25rem;
     padding-bottom: 2rem;
     border: 0.1rem solid transparent;
     -webkit-transition: all 0.2s ease-in-out;
@@ -3728,8 +3785,7 @@ p > .social__link {
     .menu-grid-block__img img {
       width: 100%; }
   .menu-grid-block--lg .menu-grid-block__img {
-    width: 80%;
-    max-width: none; }
+    max-width: 80%; }
     .menu-grid-block--lg .menu-grid-block__img img {
       max-height: 100%;
       max-width: 100%;
@@ -3755,6 +3811,11 @@ p > .social__link {
   .configuration-slider {
     margin-left: -2rem;
     margin-right: -2rem; }
+  .cake-simple__img {
+    max-height: 35rem; }
+  .img-wrap {
+    height: 35rem;
+    line-height: 35rem; }
   .more {
     height: 4.4rem;
     padding: 0 4rem; }
@@ -3806,7 +3867,7 @@ p > .social__link {
       margin-bottom: 2rem;
       border-bottom: .1rem solid #eee;
       padding-bottom: 2rem;
-      padding-right: 1.7rem; }
+      padding-right: 2.5rem; }
     .cart-table td {
       width: 100%;
       text-align: left;
@@ -3842,7 +3903,7 @@ p > .social__link {
       padding-left: 0; }
     .cart-table td:last-child {
       position: absolute;
-      top: 1rem;
+      top: 2.7rem;
       right: 0;
       padding: 0;
       width: auto; }
@@ -4011,6 +4072,11 @@ p > .social__link {
     width: auto;
     max-width: none;
     max-height: none; }
+  .menu-grid-block--style1 {
+    text-align: left; }
+    .menu-grid-block--style1 .menu-grid-block__img {
+      left: auto;
+      right: 0; }
   .card {
     padding-top: 4rem; }
   .card__img {

@@ -182,20 +182,22 @@
 									<div class="cart-table-reload">
 										<a href="#" class="btn btn--dark">Обновить корзину</a>
 									</div>
-
-									<h3 class="h3 mb25">Промокод на скидку</h3>
-									<div class="row align-items-center">
-										<div class="col-lg-7">
-											<div class="form-field form-single">
-												<input type="text" class="form-input form-single__input" placeholder="Введите промокод"/>
-												<button type="button" class="btn btn--warning btn--lg form-single__button">
-													<span class="d-sm-none d-block"><svg class="icon icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></span><span class="d-none d-sm-block">Применить</span>
-												</button>
+									
+									<div class="d-none d-lg-block">
+										<h3 class="h3 mb25">Промокод на скидку</h3>
+										<div class="row align-items-center">
+											<div class="col-md-7">
+												<div class="form-field form-single">
+													<input type="text" class="form-input form-single__input" placeholder="Введите промокод"/>
+													<button type="button" class="btn btn--warning btn--lg form-single__button">
+														<span class="d-sm-none d-block"><svg class="icon icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></span><span class="d-none d-sm-block">Применить</span>
+													</button>
+												</div>
 											</div>
-										</div>
-										<div class="col-lg-5">
-											<div class="cart-total mb20">
-												Итого: <strong>12 600 руб</strong>
+											<div class="col-md-5">
+												<div class="cart-total mb20">
+													Итого: <strong>12 600 руб</strong>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -277,6 +279,24 @@
 											<span class="checkbox__figure"></span>
 											<span class="checkbox__text font-bold">Оплатить только предоплату 50%</span>
 										</label>
+									</div>
+									<div class="d-lg-none">
+										<h3 class="h3 mb25">Промокод на скидку</h3>
+										<div class="row align-items-center">
+											<div class="col-md-7">
+												<div class="form-field form-single">
+													<input type="text" class="form-input form-single__input" placeholder="Введите промокод"/>
+													<button type="button" class="btn btn--warning btn--lg form-single__button">
+														<span class="d-sm-none d-block"><svg class="icon icon-right-arrow"><use xlink:href="#icon-right-arrow"></use></svg></span><span class="d-none d-sm-block">Применить</span>
+													</button>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="cart-total mb20">
+													Итого: <strong>12 600 руб</strong>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="cart-simple__item">
@@ -528,10 +548,10 @@
 		</div>
 		<div class="col-md-6 mb30">
 			<p class="size-lm text-center mt10">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
-			<form action="#" class="mt60">
+			<form action="#" class="mt60 mt-sm-20">
 				<div class="form-field">
 					<div class="form-field-icon">
-						<input type="text" class="form-input" id="datetimepicker1" placeholder="Дата и время">
+						<input type="date" class="form-input" id="datetimepicker1" placeholder="Дата и время">
 						<span class="form-icon"><span class="arrow"></span></span>
 					</div>
 				</div>
@@ -544,7 +564,7 @@
 				<div class="form-field">
 					<input type="email" class="form-input " placeholder="Email">
 				</div>
-				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg mt30">
+				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg mt35">
 				<p class="mt10 size-xs text-center color-default mb0">
 					Нажимая кнопку, вы соглашаетесь <br>с <a data-fancybox data-src="#popup-conditions"  href="javascript:;" onclick="javascript:parent.jQuery.fancybox.close();" class="link">условиями обработки данных</a>
 				</p>
@@ -798,12 +818,12 @@
 					<li>- После дегустации вы делаете заказ торта весом от 3 кг с понравившейся начинкой </li>
 				</ul>
 			</div>
-			<p class="size-sm color-default">* Стоимость доставки рассчитывается как доставка торта <br>
+			<p class="size-sm color-default mt130 mt-md-150 mt-sm-20">* Стоимость доставки рассчитывается как доставка торта <br>
 			В случае заказа торта весом менее 3 кг или отказа от заказа оплачивается дегустационный набор</p>
 		</div>
 		<div class="col-md-6 mb30">
-			<p class="size-lm text-center">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
-			<form action="#">
+			<p class="size-lm text-center mt10">Введите, пожалуйста, свои данные и наш менеджер свяжется с вами в течение нескольких минут</p>
+			<form action="#" class="mt60 mt-sm-20 ">
 				<div class="form-field">
 					<div class="form-field-icon">
 						<input type="text" class="form-input" id="datetimepicker" placeholder="Дата">
@@ -819,7 +839,7 @@
 				<div class="form-field">
 					<input type="email" class="form-input" placeholder="Email">
 				</div>
-				<input type="submit" value="Оформить заказ" class="btn btn--block btn--warning btn--lg">
+				<input type="submit" value="Оформить заказ" class="mt35 btn btn--block btn--warning btn--lg">
 				<p class="mt10 size-xs text-center color-default mb0">
 					Нажимая кнопку, вы соглашаетесь <br>с <a data-fancybox data-src="#popup-conditions"  href="javascript:;" onclick="javascript:parent.jQuery.fancybox.close();" class="link">условиями обработки данных</a>
 				</p>
@@ -1316,9 +1336,9 @@
 </svg>
 
 <div class="icon-load">
-	<div class="ball a"></div>
+<!-- 	<div class="ball a"></div>
 	<div class="ball b"></div>
-	<div class="ball c"></div>
+	<div class="ball c"></div> -->
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>

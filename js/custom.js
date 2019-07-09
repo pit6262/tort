@@ -35,8 +35,7 @@ $(function(){
 	}
 	if($('#datetimepicker1').length){
 		$('#datetimepicker1').datetimepicker({
-			locale: 'ru', 
-			format: 'L'         
+			locale: 'ru',        
 		});
 	}
 
@@ -314,17 +313,10 @@ if($('.adversting').length){
     arrows: false,
     adaptiveHeight: true,
     centerMode: true,
-	centerPadding: '120px',
+	centerPadding: '60px',
 	slidesToShow: 1,
-	responsive: [
-		{
-			breakpoint: 575,
-			settings: {
-				centerPadding: '60px',
-				variableWidth: true,
-			}
-		}
-	]
+	variableWidth: true,
+
   }
   $slick_slider.slick(settings);
 
@@ -350,7 +342,7 @@ if($('#map').length){
 		var myMap; 
 		function init () { 
 		   var myMap = new ymaps.Map("map", {
-		    center: [55.786456, 37.881606], 
+		    center: [55.795341, 37.933948], 
 		    zoom: 15,
 		    controls: ['geolocationControl', 'zoomControl']
 			});
